@@ -19,6 +19,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2DPlayer.AddForce(movement * speed * Time.fixedDeltaTime, ForceMode2D.Force);
+        rb2DPlayer.MovePosition(rb2DPlayer.position + movement * speed * Time.fixedDeltaTime);
     }
 }
