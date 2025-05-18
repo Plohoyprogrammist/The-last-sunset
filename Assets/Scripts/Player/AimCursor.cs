@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class AimCursor : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Camera cam;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector2 cursorAim = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        transform.position = cursorAim;
     }
 }
