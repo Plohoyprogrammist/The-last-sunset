@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27b8e8096991b844bca83dc403da927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1000
   blinckForce: 1000
 --- !u!212 &382371685
 SpriteRenderer:
@@ -235,7 +235,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 2
+  m_LinearDamping: 7
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
